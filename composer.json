@@ -1,0 +1,23 @@
+{
+  "name": "jonathan-martz/lumen-controller-webhook-jira",
+  "description": "Php Lumen Webhook Jira Controller",
+  "license": "MIT",
+  "require": {
+    "php": "^7.1|^7.2|^7.3|^7.4",
+    "ext-json": "*",
+    "laravel/lumen-framework": "^5.6|^6.0"
+  },
+  "autoload": {
+    "classmap": [
+      "model/"
+    ]
+  },
+  "authors": [
+    {
+      "name": "Jonathan Martz",
+      "email": "composer@jmartz.de",
+      "homepage": "https://www.jmartz.de",
+      "role": "Developer"
+    }
+  ]
+}
