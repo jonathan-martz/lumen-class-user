@@ -1,6 +1,6 @@
 {
   "name": "jonathan-martz/lumen-model-user",
-  "description": "Php Lumen Webhook Jira Controller",
+  "description": "Php Lumen Model User",
   "license": "MIT",
   "require": {
     "php": "^7.1|^7.2|^7.3|^7.4",
