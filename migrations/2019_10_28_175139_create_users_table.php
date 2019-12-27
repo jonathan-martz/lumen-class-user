@@ -25,7 +25,6 @@ class CreateUserTable extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->boolean('active')->default(false);
             $table->integer('RID')->nullable();
-            $table->integer('last_login')->nullable();
         });
     }
 
