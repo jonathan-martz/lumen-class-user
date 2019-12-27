@@ -12,7 +12,8 @@
   },
   "autoload": {
     "classmap": [
-      "model/"
+      "model/",
+      "provider/"
     ]
   },
   "authors": [
