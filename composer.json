@@ -6,7 +6,6 @@
     "php": "^7.1|^7.2|^7.3|^7.4",
     "ext-json": "*",
     "laravel/lumen-framework": "^5.6|^6.0",
-    "jonathan-martz/lumen-model-role-guest": "^0.1",
     "jonathan-martz/lumen-model-role-user": "^0.1",
     "jonathan-martz/lumen-model-role-admin": "^0.1"
   },
