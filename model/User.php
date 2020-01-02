@@ -35,11 +35,18 @@ class User extends Model implements AuthenticatableContract, AuthorizableContrac
         'password',
     ];
 
+    /**
+     * User constructor.
+     * @param array $attributes
+     */
     public function __construct(array $attributes = [])
     {
         parent::__construct($attributes);
     }
 
+    /**
+     * @return false|string
+     */
     public function getLastLogin()
     {
         $loginTry = DB::table('login_try')
@@ -52,6 +59,9 @@ class User extends Model implements AuthenticatableContract, AuthorizableContrac
         }
     }
 
+    /**
+     * @return string
+     */
     public function getRoleName()
     {
         $user = DB::table('user_role')->where('id', '=', $this->getAttribute('RID'));
