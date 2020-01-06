@@ -39,8 +39,11 @@ class User extends Model implements AuthenticatableContract, AuthorizableContrac
      * User constructor.
      * @param array $attributes
      */
-    public function __construct(array $attributes = [])
+    public function __construct($attributes = [])
     {
+        if(!is_array($attributes)) {
+            $attributes = (array)$attributes;
+        }
         parent::__construct($attributes);
     }
 
