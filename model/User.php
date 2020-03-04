@@ -69,11 +69,11 @@ class User extends Model implements AuthenticatableContract, AuthorizableContrac
      */
     public function getRoleName()
     {
-        $user = DB::table('user_role')->where('id', '=', $this->getAttribute('RID'));
+        $roles = DB::table('user_role')->where('id', '=', $this->getAttribute('RID'));
 
-        if($user->count() === 1) {
-            $userData = $user->first();
-            return $userData->name;
+        if($roles->count() === 1) {
+            $role = $roles->first();
+            return $role->name;
         }
 
         return 'guest';
