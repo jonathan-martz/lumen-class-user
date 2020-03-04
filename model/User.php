@@ -60,6 +60,8 @@ class User extends Model implements AuthenticatableContract, AuthorizableContrac
             $loginData = $loginTry->first();
             return date('d.m.Y H:i:s', $loginData->created_at);
         }
+
+        return false;
     }
 
     /**
@@ -74,15 +76,6 @@ class User extends Model implements AuthenticatableContract, AuthorizableContrac
             return $userData->name;
         }
 
-        return 'user';
+        return 'guest';
     }
-
-    /**
-     * @return bool
-     */
-    public function getActive()
-    {
-        return (bool)$this->getAttribute('active');
-    }
-
 }
