@@ -17,18 +17,7 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('username');
-            $table->string('username_hash');
-            $table->string('password');
-            $table->string('firstname')->nullable();
-            $table->string('secondname')->nullable();
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->boolean('active')->default(false);
-            $table->integer('RID')->nullable();
-        });
+        // @todo modify users table
     }
 
     /**
