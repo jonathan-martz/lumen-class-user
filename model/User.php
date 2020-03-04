@@ -77,4 +77,13 @@ class User extends Model implements AuthenticatableContract, AuthorizableContrac
 
         return 'guest';
     }
+
+    /**
+     * @inheritDoc
+     */
+    public function can($ability, $arguments = [])
+    {
+        var_dump($ability);
+        die('App\Model\User: add logic for can');
+    }
 }
