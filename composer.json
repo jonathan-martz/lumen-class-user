@@ -6,8 +6,8 @@
     "php": "^7.3|^7.4",
     "ext-json": "*",
     "laravel/framework": "^6.3|^7.0",
-    "jonathan-martz/lumen-model-role-user": "^0.1",
-    "jonathan-martz/lumen-model-role-admin": "^0.1"
+    "jonathan-martz/lumen-model-role-user": "dev-nova",
+    "jonathan-martz/lumen-model-role-admin": "dev-nova"
   },
   "autoload": {
     "classmap": [
