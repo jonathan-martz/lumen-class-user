@@ -3,19 +3,17 @@
 namespace App\Model;
 
 use Illuminate\Auth\Authenticatable;
-use Illuminate\Contracts\Auth\Access\Authorizable as AuthorizableContract;
 use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
-use Laravel\Lumen\Auth\Authorizable;
 
 /**
  * Class User
  * @package App\Model
  */
-class User extends Model implements AuthenticatableContract, AuthorizableContract
+class User extends Model implements AuthenticatableContract
 {
-    use Authenticatable, Authorizable;
+    use Authenticatable;
 
     /**
      * The attributes that are mass assignable.
