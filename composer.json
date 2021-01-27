@@ -5,10 +5,10 @@
   "require": {
     "php": "^7.3|^7.4",
     "ext-json": "*",
-    "illuminate/auth": "^7.0",
-    "illuminate/contracts": "^7.0",
-    "illuminate/database": "^7.0",
-    "illuminate/support": "^7.0",
+    "illuminate/auth": "^8.0",
+    "illuminate/contracts": "^8.0",
+    "illuminate/database": "^8.0",
+    "illuminate/support": "^8.0",
     "jonathan-martz/lumen-model-role-user": "^0.1",
     "jonathan-martz/lumen-model-role-admin": "^0.1"
   },
